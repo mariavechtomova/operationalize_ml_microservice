@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/mariavechtomova/operationalize_ml_microservice/tree/master.svg?style=svg)](https://circleci.com/gh/mariavechtomova/operationalize_ml_microservice/tree/master)
 
 ## Project Overview
 
@@ -33,6 +33,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+In order to make predictions, run `./make_prediction.sh`
 
 ### Kubernetes Steps
 
