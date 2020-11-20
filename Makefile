@@ -7,7 +7,7 @@
 
 setup:
 	# Create python virtualenv & activate
-	python3 -m venv venv
+	python3 -m venv venv &&\
     . venv/bin/activate
 
 install:
@@ -23,8 +23,8 @@ test:
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
-	. venv/bin/activate
-	hadolint Dockerfile
+	. venv/bin/activate &&\
+	hadolint Dockerfile &&\
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
 	pylint --disable=R,C,W1203 app.py
